@@ -615,7 +615,113 @@ int main() {
         <p><strong>Output</strong></p>
         <img src="Screenshot 2025-03-27 121325.png">
         
-    
+        <p><strong>LOOPING STATEMENT</strong></p>
+        <p>We use loops to execute a block of code repeatedly based on a condition or a set of conditions. We have primarily three types of iteration statements: <strong>for loop</strong>, <strong>while loop</strong>, <strong>do-while loop</strong>.</p>
+        
+        <p><strong>TYPES OF LOOP STATEMENT</strong></p>
+        <p>1) <strong>FOR LOOP</strong></p>
+        
+        <p><strong>SYNTAX:</strong></p>
+        <pre><code>
+        for (initialization; condition; update)
+        {
+          // code to be executed in each iteration of the loop;
+        }
+        </code></pre>
+        
+        <p><strong>PROGRAM</strong></p>
+        <p><strong>// PROGRAM USING FOR LOOP</strong></p>
+        <pre><code>
+        // Include the standard input-output header file
+        #include<stdio.h> 
+        
+        int main() 
+        { 
+            int i; 
+            // Loop to print numbers from 1 to 10
+            for(i=1;i&lg;=10;i++) 
+            { 
+                printf("%d",i); 
+                printf("\n"); 
+            } 
+            printf("This program is executed by Bipin Bhattarai(954)"); 
+            return 0; 
+        }
+        </code></pre>
+        
+        <!-- Image Placeholder -->
+        <p><strong>Image:</strong></p>
+        <img src="Screenshot 2025-03-27 120411.png" alt="Looping Example">
+        <p><strong>2) WHILE LOOP</strong></p>
+
+<p><strong>SYNTAX:</strong></p>
+<pre><code>
+while (condition)
+{
+  // code to be executed as long as condition is true; 
+  // increment or decrement
+}
+</code></pre>
+
+<p><strong>PROGRAM</strong></p>
+<p><strong>// PROGRAM USING WHILE LOOP</strong></p>
+<pre><code>
+// Include the standard input-output header file
+#include&lt;stdio.h&gt; 
+
+int main() 
+{ 
+    int i = 0; // Initialize variable
+    // Loop that runs as long as i &lt;= 10
+    while(i &lt;= 10) 
+    { 
+        printf("%d",i); 
+        i = i + 2; // Increment by 2
+        printf("\n"); 
+    } 
+    printf("This program is executed by Bipin Bhattarai(954)"); 
+    return 0; 
+}
+</code></pre>
+
+<p><strong>Output:</strong></p>
+<img src="Screenshot 2025-03-27 121325.png" alt="While Loop Output">
+<p><strong>3) DO WHILE LOOP</strong></p>
+
+<p><strong>SYNTAX:</strong></p>
+<pre><code>
+do 
+{ 
+  // code to be executed; 
+  // increment or decrement 
+} while (condition);
+</code></pre>
+
+<p><strong>PROGRAM</strong></p>
+<p><strong>// PROGRAM USING DO WHILE LOOP</strong></p>
+<pre><code>
+// Include the standard input-output header file
+#include&lt;stdio.h&gt; 
+
+int main() 
+{ 
+    int i = 1; 
+    do 
+    { 
+        printf("%d",i); 
+        i = i * 2; // Multiply by 2 in each iteration
+        printf("\t"); 
+    } 
+    while(i &lt;= 100); 
+    printf("This program is executed by Bipin Bhattarai(954)\n"); 
+    return 0; 
+}
+</code></pre>
+
+<p><strong>Output:</strong></p>
+<img src="Screenshot 2025-03-27 121325.png" alt="Do While Loop Output">
+  
+        
     </div>
    
 </body>
