@@ -446,16 +446,16 @@ int main() {
 int main() {
     int a[3][3], b[3][3], c[3][3], i, j;
     printf("Enter values for two 3x3 matrices:\n");
-    for(i=0; i&lt;3; i++) {
-        for(j=0; j&lt;3; j++) {
+    for(i=0; i<3; i++) {
+        for(j=0; j<3; j++) {
             scanf("%d", &a[i][j]);
             scanf("%d", &b[i][j]);
             c[i][j] = a[i][j] + b[i][j];
         }
     }
     printf("Added Matrix:\n");
-    for(i=0; i&lt;3; i++) {
-        for(j=0; j&lt;3; j++) {
+    for(i=0; i<3; i++) {
+        for(j=0; j<3; j++) {
             printf("%d\t", c[i][j]);
         }
         printf("\n");
@@ -468,23 +468,23 @@ int main() {
 int main() {
     int a[3][3], b[3][3], p[3][3], i, j, k;
     printf("Enter values for two 3x3 matrices:\n");
-    for(i=0; i &lt;3; i++) {
-        for(j=0; j &lt;3; j++) {
+    for(i=0; i<3; i++) {
+        for(j=0; j<3; j++) {
             scanf("%d", &a[i][j]);
             scanf("%d", &b[i][j]);
         }
     }
-    for(i=0; i&lt;3; i++) {
-        for(j=0; j&lt;3; j++) {
+    for(i=0; i<3; i++) {
+        for(j=0; j<3; j++) {
             p[i][j] = 0;
-            for(k=0; k&lt;3; k++) {
+            for(k=0; k<3; k++) {
                 p[i][j] += a[i][k] * b[k][j];
             }
         }
     }
     printf("Multiplied Matrix:\n");
-    for(i=0; i&lt;3; i++) {
-        for(j=0; j&lt;3; j++) {
+    for(i=0; i<3; i++) {
+        for(j=0; j<3; j++) {
             printf("%d\t", p[i][j]);
         }
         printf("\n");
@@ -566,8 +566,57 @@ int main() {
     </code></pre>
     <p><strong>Output</strong></p>
     <img src="Screenshot 2025-03-27 115125.png"></img>
+    <pre>
+      <p><strong>Class task: Write a program to check if the number is palindrome or not</strong></p>
+      <code>
+        #include <stdio.h>
+
+          int main() {
+              int n, s = 0, r, original;
+              printf("Enter the number: ");
+              scanf("%d", &n);
+              original = n; 
+              while (n > 0) {
+                  r = n % 10;
+                  s = s * 10 + r;
+                  n = n / 10;
+              }
+              
+              
+              if (s == original) {
+                  printf("The number is palindrome\n");
+              } else {
+                  printf("The number is not palindrome\n");
+              }
+          
+              return 0;
+          }          
+      </code>
+      <p><strong>Output</strong></p>
+      <img src="Screenshot 2025-03-27 120411.png">
+      <pre>
+        <p><strong>Class task: Write a program to print the fibonacci series of n term</strong></p>
+        <code>
+          #include <stdio.h>
+            int main(){
+              int n,i,a=1,b=1,c;
+              printf("Enter the number ");
+              scanf("%d",&n);
+              for(i=1;i<=n;i++)
+              {
+                printf("%d \t",a);
+                c=a+b;
+                a=b;
+                b=c;
+              }
+              return 0;
+            }            
+        </code>
+        <p><strong>Output</strong></p>
+        <img src="Screenshot 2025-03-27 121325.png">
+        
     
     </div>
-    
+   
 </body>
  </html>
